@@ -1,4 +1,4 @@
-# <p align="center">JavaScript Bootcamp Content</p>
+# <p align="center">JavaScript Bootcamp Assignments</p>
 
 Current Progress : <p>![1%](https://progress-bar.dev/4/?scale=100&width=1100)</p>
 
