@@ -2,7 +2,7 @@
 
 Current Progress : <p>![9%](https://progress-bar.dev/9/?scale=100&width=1100)</p>
 
-### Introduction - from 1 to 9
+### Week 1: Introduction - from 1 to 9
 
 ###### Assignment 1
 ```
@@ -80,7 +80,7 @@ document.write("Iam In Page");
 */
 ```
 
-### Data Types And Variables - from 10 to 17
+### Week 2: Data Types And Variables - from 10 to 17
 
 ###### Assignment 1
 ```
@@ -110,9 +110,50 @@ console.log("I'm In \n\\\\\nLove \\\\\"\"\" '''\n++ With ++ \n\\\"\"\"\\\"\"\"\n
 console.log("_" + `${a}_${b}`.repeat(4) + "_");
 ```
 
-### Operators
-> To be added
+### Week 3: Operators - from 18 to 22
 
+###### Assignment 1
+```
+console.log(10 * 20 + (15 % 3) + 190 + 10 - 400)
+```
+###### Assignment 2
+```
+let num = 3;
+
+// Solution One
+console.log(num + true + true + true); // 6
+
+// Solution Two
+console.log(num * (true + true)); // 6
+
+// Soultion Three
+console.log(num - (false - (true + true + true))); // 6
+
+// Soultion Four
+console.log((true + true) * (true + true + true)); // 6
+
+// Solution Five
+console.log(true + true + true + true + true + true); // 6
+
+// Solution Six
+console.log(++num + (true + true)); // 6
+```
+###### Assignment 3
+```
+let num = "10";
+
+// Solution One
+console.log(+num * (true + true)); // 20
+
+// Solution Two
+console.log(+num + +num); // 20
+
+// Solution Three
+console.log(num++ + --num); // 20
+
+// Solution Four
+console.log(Number(num) + +num); // 20
+```
 
 ### Numbers And Strings
 > To be added
