@@ -80,7 +80,37 @@ document.write("Iam In Page");
 */
 ```
 
-### Data Types And Variables
+### Data Types And Variables - from 10 to 17
+
+###### Assignment 1
+```
+var number1 = 10;
+var number2 = 20;
+
+console.log(number1+""+number2); 
+console.log(typeof (number1+""+number2)); 
+console.log(`${number1}${number2}`); 
+console.log(typeof(`${number1}${number2}`)); 
+
+console.log(number2+"\n"+number1);
+
+console.log(`${number1}
+${number2}`);
+```
+###### Assignment 2
+```
+<div id="elzero">object</div>
+```
+###### Assignment 3
+```
+console.log("I'm In \n\\\\\nLove \\\\\"\"\" '''\n++ With ++ \n\\\"\"\"\\\"\"\"\n\"\"JavaScript\"\"`")
+```
+###### Assignment 4
+```
+console.log("_" + `${a}_${b}`.repeat(4) + "_");
+```
+
+### Operators
 > To be added
 
 
