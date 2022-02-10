@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![9%](https://progress-bar.dev/9/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/14/?scale=100&width=1100)</p>
 
 ### Week 1: Introduction - from 1 to 9
 
