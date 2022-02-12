@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/18/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/22/?scale=100&width=1100)</p>
 
 ### Week 1: Introduction - from 1 to 9
 
@@ -121,38 +121,38 @@ console.log(10 * 20 + (15 % 3) + 190 + 10 - 400)
 let num = 3;
 
 // Solution One
-console.log(num + true + true + true); // 6
+console.log(num + true + true + true); 
 
 // Solution Two
-console.log(num * (true + true)); // 6
+console.log(num * (true + true)); 
 
 // Soultion Three
-console.log(num - (false - (true + true + true))); // 6
+console.log(num - (false - (true + true + true)));
 
 // Soultion Four
-console.log((true + true) * (true + true + true)); // 6
+console.log((true + true) * (true + true + true)); 
 
 // Solution Five
-console.log(true + true + true + true + true + true); // 6
+console.log(true + true + true + true + true + true); 
 
 // Solution Six
-console.log(++num + (true + true)); // 6
+console.log(++num + (true + true)); 
 ```
 ###### Assignment 3
 ```
 let num = "10";
 
 // Solution One
-console.log(+num * (true + true)); // 20
+console.log(+num * (true + true)); 
 
 // Solution Two
-console.log(+num + +num); // 20
+console.log(+num + +num); 
 
 // Solution Three
-console.log(num++ + --num); // 20
+console.log(num++ + --num); 
 
 // Solution Four
-console.log(Number(num) + +num); // 20
+console.log(Number(num) + +num); 
 ```
 
 ### Week 4: Numbers And Strings - from 23 to 30 
@@ -208,6 +208,29 @@ console.log(Number(flt.toFixed(0)));
 ###### Assignment 1.7
 ```
 console.log(Math.floor(Math.random()*5) ); 
+```
+
+
+###### Assignment 2.1
+```
+let userName = "Elzero";
+console.log(userName[0].toLowerCase());
+console.log(userName.charAt(0).toLowerCase());
+console.log(userName.substring(0, 1).toLowerCase());
+console.log(userName.slice(0, 1).toLowerCase());
+console.log(userName.substr(0, 1).toLowerCase());
+console.log(userName.split("", 1).toString().toLowerCase().repeat(3)); 
+```
+###### Assignment 2.1
+```
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+
+console.log(word.includes(letterZ)); 
+console.log(word.startsWith(letterE.toUpperCase())); 
+console.log(word.endsWith(letterO.toLowerCase())); 
 ```
 
 ### Control Flow
