@@ -1,6 +1,7 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
 Current Progress : <p>![](https://progress-bar.dev/22/?scale=100&width=1100)</p>
+<hr>
 
 ### Week 1: Introduction - from 1 to 9
 
@@ -79,6 +80,7 @@ console.log("Iam In Console");
 document.write("Iam In Page");
 */
 ```
+<hr>
 
 ### Week 2: Data Types And Variables - from 10 to 17
 
@@ -109,6 +111,7 @@ console.log("I'm In \n\\\\\nLove \\\\\"\"\" '''\n++ With ++ \n\\\"\"\"\\\"\"\"\n
 ```
 console.log("_" + `${a}_${b}`.repeat(4) + "_");
 ```
+<hr>
 
 ### Week 3: Operators - from 18 to 22
 
@@ -154,6 +157,7 @@ console.log(num++ + --num);
 // Solution Four
 console.log(Number(num) + +num); 
 ```
+<hr>
 
 ### Week 4: Numbers And Strings - from 23 to 30 
 
@@ -209,7 +213,7 @@ console.log(Number(flt.toFixed(0)));
 ```
 console.log(Math.floor(Math.random()*5) ); 
 ```
-
+<br>
 
 ###### Assignment 2.1
 ```
@@ -232,11 +236,48 @@ console.log(word.includes(letterZ));
 console.log(word.startsWith(letterE.toUpperCase())); 
 console.log(word.endsWith(letterO.toLowerCase())); 
 ```
+<hr>
 
-### Control Flow
-> To be added
+### Week 5: Control Flow - from 31 to 39  
 
+###### Assignment 1.1
+```
+console.log(100 == "100");
+console.log(100 < 1000);
+console.log(110 > 100 || 10 < 20);
+console.log(-10 == "-10");
+console.log(!-50 >= +"-40");
+console.log(!10 <= -"-40");
+console.log(!"10" != 10);
+console.log(!20 == false);
+```
+###### Assignment 1.2
+```
+let num1 = 10;
+let num2 = 20;
 
+console.log(typeof num1 === typeof num2); 
+console.log(num1 < num2); 
+console.log(num2 > num1); 
+console.log(!(num1 == num2)); 
+console.log(num1 != num2); 
+console.log(num1 <= num2); 
+```
+###### Assignment 1.3
+```
+let a = 20;
+let b = 30;
+let c = 10;
+
+console.log(a < b && a > c || a == b); 
+console.log(a < b || a != c); 
+console.log(!(a == b) && !(a > b) && !(a == c) && !(a < c));
+```
+<br>
+
+###### Assignment 2.1
+```
+```
 ### Arrays
 > To be added
 
