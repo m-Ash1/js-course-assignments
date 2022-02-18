@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/36/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/43/?scale=100&width=1100)</p>
 <hr>
 
 ### Week 1: Introduction - from 1 to 9
@@ -500,8 +500,100 @@ console.log(allArrs); // fxy
 ```
 
 
-### Loop
-> To be added
+### Week 6: Loops - from 48 to 56
+
+###### Assignment 1.1
+```
+let start = 10;
+let end = 100;
+let exclude = 40;
+
+for (let i = start; i <= end; i += start) {
+  if (i == exclude) {
+    continue;
+  }
+  console.log(i);
+}
+```
+###### Assignment 1.2
+```
+let start = 10;
+let end = 0;
+let stop = 3;
+
+for(let i = start; i>=stop; i--){
+    if(i>=start){
+        console.log(i.toString())
+    }
+    else{
+        console.log(`${end}${i}`)
+    }
+}
+```
+###### Assignment 1.3
+```
+let start = 1;
+let end = 6;
+let breaker = 2;
+
+for (let i = start; i <= end; i++) {
+  console.log(i);
+  for (let k = breaker; k < breaker ; k += breaker) {
+    console.log(`-- ${k}`);
+  }
+}
+```
+###### Assignment 1.4
+```
+let index = 10;
+let jump = 2;
+let end = 0;
+
+for (;;) {
+    console.log(index);
+    if (index === jump * jump) break;
+    index -= jump;
+}
+```
+###### Assignment 1.5
+```
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+let ctn = +false;
+
+for (let i = +false; i < friends.length;i++) {
+  if (friends[i].startsWith(letter.toUpperCase())) continue;
+  console.log(`${++ctn} => ${friends[i]}`);
+}
+```
+###### Assignment 1.6
+```
+let start = 0;
+let swappedName = "elZerO"; // ELZERO
+let final = "";
+
+let upperName = swappedName.toUpperCase();
+
+for (let i = start; i < swappedName.length; i++) {
+  if (upperName[i] != swappedName[i]) {
+    final += upperName[i];
+  } else {
+    final += swappedName[i].toLowerCase();
+  }
+}
+console.log(final);
+```
+###### Assignment 1.7
+```
+let start = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
+
+for (let i = start; i < mix.length; i++) {
+  if (typeof mix[i] === "number" && i != start) {
+    console.log(mix[i]);
+  }
+}
+```
 
 
 ### Functions & Scope
