@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/43/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/44/?scale=100&width=1100)</p>
 <hr>
 
 ### Week 1: Introduction - from 1 to 9
@@ -498,7 +498,7 @@ allArrs = allArrs
 
 console.log(allArrs); // fxy
 ```
-
+<hr>
 
 ### Week 6: Loops - from 48 to 56
 
@@ -595,6 +595,26 @@ for (let i = start; i < mix.length; i++) {
 }
 ```
 
+<br>
+
+###### Assignment 2.1
+```
+let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index = 0;
+let counter = 0;
+
+while (index < friends.length) {
+  if (
+    friends[index].toString().startsWith("A") ||
+    typeof friends[index] === "number"
+  ) {
+    index++;
+    continue;
+  } else console.log(`${++counter} => ${friends[index]}`);
+  index++;
+}
+```
+<hr>
 
 ### Functions & Scope
 > To be added
