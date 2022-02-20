@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/44/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/50/?scale=100&width=1100)</p>
 <hr>
 
 ### Week 1: Introduction - from 1 to 9
@@ -616,9 +616,117 @@ while (index < friends.length) {
 ```
 <hr>
 
-### Functions & Scope
-> To be added
+### Week 7: Functions & Scope pt.1  - from 57 to 63
 
+###### Assignment 1
+```
+function sayHello(theName, theGender = "N/A") {
+  switch (theGender) {
+    case "Male":
+      console.log(`Hello Mr ${theName}`);
+      break;
+    case "Female":
+      console.log(`Hello Mrs ${theName}`);
+      break;
+    default:
+      console.log(`Hello ${theName}`);
+  }
+}
+sayHello("Osama", "Male");
+sayHello("Eman", "Female");
+sayHello("Sameh");
+```
+###### Assignment 2
+```
+function calculate(firstNum, secondNum, operation) {
+  if (secondNum === undefined) return console.log(`Second Number Not Found`);
+  switch (operation) {
+    case "add":
+    default:
+      console.log(firstNum + secondNum);
+      break;
+    case "subtract":
+      console.log(firstNum - secondNum);
+      break;
+    case "multiply":
+      console.log(firstNum * secondNum);
+      break;
+  }
+}
+
+calculate(20);
+calculate(20, 30);
+calculate(20, 30, "add");
+calculate(20, 30, "subtract");
+calculate(20, 30, "multiply");
+```
+###### Assignment 3
+```
+function ageInTime(theAge) {
+  if (theAge > 100 || theAge < 10) return `Age out of range`;
+  console.log(
+    `You age is ${theAge} Years or ${theAge * 12} Months or ${
+      theAge * 12 * 4.34524
+    } Weeks or ${theAge * 365} Days or ${theAge * 8760} Hours or ${
+      theAge * 525600
+    } Minutes or ${theAge * 3.154e7} Seconds`
+  );
+}
+
+ageInTime(110);
+ageInTime(38);
+```
+###### Assignment 4
+```
+function checkStatus(a, b, c) {
+  let arr = [a, b, c];
+  for (let i = 0; i < arr.length; i++) {
+    typeof arr[i] === "string"
+      ? (a = arr[i])
+      : typeof arr[i] === "number"
+      ? (b = arr[i])
+      : typeof arr[i] == "boolean"
+      ? (c = `You Are Available For Hire`)
+      : (c = `You Are Available For Hire`);
+  }
+  console.log(`Hello ${a}, Your Age Is ${b}, ${c}`);
+}
+
+checkStatus("Osama", 38, true);
+checkStatus(38, "Osama", true);
+checkStatus(true, 38, "Osama");
+checkStatus(false, "Osama", 38);
+```
+###### Assignment 5
+```
+function createSelectBox(startYear, endYear) {
+  document.write(`<select>`);
+  for (let i = startYear; i <= endYear; i++) {
+    document.write(`<option value="${i}">${i}</option>`);
+  }
+  document.write(`</select>`);
+}
+createSelectBox(2000, 2021);
+```
+###### Assignment 6
+```
+function multiply(...numbers) {
+  let result = 1;
+  for (let i = 0; i < numbers.length; i++) {
+    if (typeof numbers[i] !== "number") continue;
+    result *= parseInt(numbers[i]);
+  }
+  console.log(result);
+}
+
+multiply(10, 20);
+multiply("A", 10, 30);
+multiply(100.5, 10, "B");
+```
+<hr>
+
+### Week 8: Functions & Scope pt.2  - from 64 to 70
+> To be added
 
 ### Higher Order Functions And Practice
 > To be added
