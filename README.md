@@ -3,6 +3,28 @@
 Current Progress : <p>![](https://progress-bar.dev/54/?scale=100&width=1100)</p>
 <hr>
 
+- ### Table of Contents:
+    - [Week 1: Introduction - from 1 to 9](#week-1-introduction---from-1-to-9)
+    - [Week 2: Data Types And Variables - from 10 to 17](#week-2-data-types-and-variables---from-10-to-17)
+    - [Week 3: Operators - from 18 to 22](#week-3-operators---from-18-to-22)
+    - [Week 4: Numbers And Strings - from 23 to 30](#week-4-numbers-and-strings---from-23-to-30)
+    - [Week 5: Control Flow - from 31 to 39](#week-5-control-flow---from-31-to-39)
+    - [Week 6: Arrays - from 40 to 47](#week-6-arrays---from-40-to-47)
+    - [Week 7: Loops - from 48 to 56](#week-7-loops---from-48-to-56)
+    - [Week 8: Functions & Scope pt.1  - from 57 to 63](#week-8-functions--scope-pt1----from-57-to-63)
+    - [Week 9: Functions & Scope pt.2  - from 64 to 70](#week-9-functions--scope-pt2----from-64-to-70)
+    - [Week 10: Higher Order Functions And Practice - from 71 to 78](#week-10-higher-order-functions-and-practice---from-71-to-78)
+    - [Week 11: Objects - from 79 to 85](#week-11-objects---from-79-to-85)
+    - [Week 12: Document Object Model [DOM] pt.1 - from 86 to 93](#week-12-document-object-model-dom-pt1---from-86-to-93)
+    - [Week 13: Document Object Model [DOM] pt.2 - from 94 to 101](#week-13-document-object-model-dom-pt2---from-94-to-101)
+    - [Week 14: Browser Object Model [BOM] pt.1 - from 102 to 110](#week-14-browser-object-model-bom-pt1---from-102-to-110)
+    - [Week 15: Browser Object Model [BOM] pt.2 - from 111 to 114](#week-15-browser-object-model-bom-pt2---from-111-to-114)
+    - [Week 16: Destructuring - from 115 to 122](#week-16-destructuring---from-115-to-122)
+    - [Week 17: Map And Set - from 123 to 133](#week-17-map-and-set---from-123-to-133)
+    - [Week 18: Regular Expression - from 134 to 146](#week-18-regular-expression---from-134-to-146)
+
+<hr>
+
 ### Week 1: Introduction - from 1 to 9
 
 ###### Assignment 1
