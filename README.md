@@ -426,7 +426,7 @@ switch (day) {
 ```
 <hr>
 
-### Week 5: Arrays - from 40 to 47  
+### Week 6: Arrays - from 40 to 47  
 
 ###### Assignment 1
 ```
@@ -500,7 +500,7 @@ console.log(allArrs); // fxy
 ```
 <hr>
 
-### Week 6: Loops - from 48 to 56
+### Week 7: Loops - from 48 to 56
 
 ###### Assignment 1.1
 ```
@@ -616,7 +616,7 @@ while (index < friends.length) {
 ```
 <hr>
 
-### Week 7: Functions & Scope pt.1  - from 57 to 63
+### Week 8: Functions & Scope pt.1  - from 57 to 63
 
 ###### Assignment 1
 ```
@@ -725,7 +725,7 @@ multiply(100.5, 10, "B");
 ```
 <hr>
 
-### Week 8: Functions & Scope pt.2  - from 64 to 70
+### Week 9: Functions & Scope pt.2  - from 64 to 70
 ###### Assignment 1
 ```
 function getDetails(zName, zAge, zCountry) {
@@ -788,10 +788,31 @@ console.log(specialMix("Test", "Cool", "Test"));
 
 <hr>
 
-### Higher Order Functions And Practice
+### Week 10: Higher Order Functions And Practice - from 71 to 78
 > To be added
 
 
-### Objects
+### Week 11: Objects - from 79 to 85
+> To be added
+
+### Week 12: Document Object Model [DOM] pt.1 - from 86 to 93
+> To be added
+
+### Week 13: Document Object Model [DOM] pt.2 - from 94 to 101
+> To be added
+
+### Week 14: Browser Object Model [BOM] pt.1 - from 102 to 110
+> To be added
+
+### Week 15: Browser Object Model [BOM] pt.2 - from 111 to 114
+> To be added
+
+### Week 16: Destructuring - from 115 to 122
+> To be added
+
+### Week 17: Map And Set - from 123 to 133
+> To be added
+
+### Week 18: Regular Expression - from 134 to 146
 > To be added
 
