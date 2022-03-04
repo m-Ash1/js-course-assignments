@@ -1,6 +1,6 @@
 # <p align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/54/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/59/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -15,10 +15,10 @@ Current Progress : <p>![](https://progress-bar.dev/54/?scale=100&width=1100)</p>
     - [Week 9: Functions & Scope pt.2](#week-9-functions--scope-pt2----from-64-to-70)
     - [Week 10: Higher Order Functions](#week-10-higher-order-functions-and-practice---from-71-to-78)
     - [Week 11: Objects](#week-11-objects---from-79-to-85)
-    - [Week 12: Document Object Model [DOM] pt.1](#week-12-document-object-model-dom-pt1---from-86-to-93)
-    - [Week 13: Document Object Model [DOM] pt.2](#week-13-document-object-model-dom-pt2---from-94-to-101)
-    - [Week 14: Browser Object Model [BOM] pt.1](#week-14-browser-object-model-bom-pt1---from-102-to-110)
-    - [Week 15: Browser Object Model [BOM] pt.2](#week-15-browser-object-model-bom-pt2---from-111-to-114)
+    - [Week 12: Document Object Model pt.1](#week-12-document-object-model-pt1---from-86-to-93)
+    - [Week 13: Document Object Model pt.2](#week-13-document-object-model-pt2---from-94-to-101)
+    - [Week 14: Browser Object Model pt.1](#week-14-browser-object-model-pt1---from-102-to-110)
+    - [Week 15: Browser Object Model pt.2](#week-15-browser-object-model-pt2---from-111-to-114)
     - [Week 16: Destructuring](#week-16-destructuring---from-115-to-122)
     - [Week 17: Map And Set](#week-17-map-and-set---from-123-to-133)
     - [Week 18: Regular Expression](#week-18-regular-expression---from-134-to-146)
@@ -811,22 +811,65 @@ console.log(specialMix("Test", "Cool", "Test"));
 <hr>
 
 ### Week 10: Higher Order Functions And Practice - from 71 to 78
-> To be added
+###### Assignment 1
+```
+let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+let mixed = mix
+  .map((el) => (typeof el === "number" ? "" : el))
+  .reduce((acc, curr) => `${acc}${curr}`);
+console.log(mixed);
+```
+###### Assignment 2
+```
+let myString = "EElllzzzzzzzeroo";
+let arr = myString
+  .split("")
+  .filter((el, index, arr) => arr[index] !== arr[index + 1])
+  .join("");
 
+console.log(arr);
+```
+###### Assignment 3
+```
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+let newArray = myArray
+  .map((el) => (Array.isArray(el) ? el.reduce((acc, curr) => acc + curr) : el))
+  .join("");
+console.log(newArray);
+```
+###### Assignment 4
+```
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+let newNumsAndStrings = numsAndStrings
+  .filter((el) => !isNaN(el))
+  .map((el) => -el);
+// [-1, -10, 10, 20, -5, -3]
+console.log(newNumsAndStrings);
+```
+###### Assignment 5
+```
+let nums = [2, 12, 11, 5, 10, 1, 99];
+let newNums = nums.reduce(
+  (acc, curr) => (curr % 2 == 0 ? acc * curr : acc + curr),
+  1
+);
+console.log(newNums);
+```
+<hr>
 
 ### Week 11: Objects - from 79 to 85
 > To be added
 
-### Week 12: Document Object Model [DOM] pt.1 - from 86 to 93
+### Week 12: Document Object Model pt.1 - from 86 to 93
 > To be added
 
-### Week 13: Document Object Model [DOM] pt.2 - from 94 to 101
+### Week 13: Document Object Model pt.2 - from 94 to 101
 > To be added
 
-### Week 14: Browser Object Model [BOM] pt.1 - from 102 to 110
+### Week 14: Browser Object Model pt.1 - from 102 to 110
 > To be added
 
-### Week 15: Browser Object Model [BOM] pt.2 - from 111 to 114
+### Week 15: Browser Object Model pt.2 - from 111 to 114
 > To be added
 
 ### Week 16: Destructuring - from 115 to 122
