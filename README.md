@@ -1,6 +1,6 @@
-# <p align="center">JavaScript Bootcamp Assignments</p>
+# <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/59/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/63/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -28,7 +28,7 @@ Current Progress : <p>![](https://progress-bar.dev/59/?scale=100&width=1100)</p>
 ### Week 1: Introduction - from 1 to 9
 
 ###### Assignment 1
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,7 +56,7 @@ Current Progress : <p>![](https://progress-bar.dev/59/?scale=100&width=1100)</p>
 </html>
 ```
 ###### Assignment 2
-```
+```javascript
 document.write(`<h1 style="color: blue;
 font-size: 80px;
 font-weight: bold;
@@ -64,11 +64,11 @@ text-align: center;
 font-family: Arial">ELZERO</h1>`);
 ```
 ###### Assignment 3
-```
+```javascript
 console.log("%cElzero %cWeb %cSchool", "color:red; font-size:40px", "color:green; font-size:40px; font-weight:bold", "color:white; font-size:40px; background-color:blue")
 ```
 ###### Assignment 4
-```
+```javascript
 console.group("Group 1");
 console.log("Message One");
 console.log("Message Two");
@@ -87,27 +87,25 @@ console.log("Message Two");
 console.groupEnd();
 ```
 ###### Assignment 5
-```
+```javascript
 console.table(["ash","roaa","Mohammed","Hamdy"])
 ```
 ###### Assignment 6
-```
+```javascript
 // First method
-// console.log("Iam In Console");
-// document.write("Iam In Page");
-
-/* Second method */
-/*
 console.log("Iam In Console");
 document.write("Iam In Page");
-*/
+
+/* Second method */
+console.log("Iam In Console");
+document.write("Iam In Page");
 ```
 <hr>
 
 ### Week 2: Data Types And Variables - from 10 to 17
 
 ###### Assignment 1
-```
+```javascript
 var number1 = 10;
 var number2 = 20;
 
@@ -122,15 +120,15 @@ console.log(`${number1}
 ${number2}`);
 ```
 ###### Assignment 2
-```
+```html
 <div id="elzero">object</div>
 ```
 ###### Assignment 3
-```
+```javascript
 console.log("I'm In \n\\\\\nLove \\\\\"\"\" '''\n++ With ++ \n\\\"\"\"\\\"\"\"\n\"\"JavaScript\"\"`")
 ```
 ###### Assignment 4
-```
+```javascript
 console.log("_" + `${a}_${b}`.repeat(4) + "_");
 ```
 <hr>
@@ -138,11 +136,11 @@ console.log("_" + `${a}_${b}`.repeat(4) + "_");
 ### Week 3: Operators - from 18 to 22
 
 ###### Assignment 1
-```
+```javascript
 console.log(10 * 20 + (15 % 3) + 190 + 10 - 400)
 ```
 ###### Assignment 2
-```
+```javascript
 let num = 3;
 
 // Solution One
@@ -164,7 +162,7 @@ console.log(true + true + true + true + true + true);
 console.log(++num + (true + true)); 
 ```
 ###### Assignment 3
-```
+```javascript
 let num = "10";
 
 // Solution One
@@ -184,7 +182,7 @@ console.log(Number(num) + +num);
 ### Week 4: Numbers And Strings - from 23 to 30 
 
 ###### Assignment 1.1
-```
+```javascript
 console.log(100_000);
 console.log(100000);
 console.log(5e4 + 5e4);
@@ -201,28 +199,28 @@ console.log(+"100000");
 console.log(parseInt("100000"));
 ```
 ###### Assignment 1.2
-```
+```javascript
 console.log(-Number.MIN_SAFE_INTEGER)
 ```
 ###### Assignment 1.3
-```
+```javascript
 console.log(Number.MAX_SAFE_INTEGER.toString().length)
 ```
 ###### Assignment 1.4
-```
+```javascript
 let myVar = "100.56789 Views";
 
 console.log(parseInt(myVar));
 console.log(+parseFloat(myVar).toFixed(2)); 
 ```
 ###### Assignment 1.5
-```
+```javascript
 let num = 10;
 
 console.log(Number.isInteger(num) + Number.isInteger(num));
 ```
 ###### Assignment 1.6
-```
+```javascript
 let flt = 10.4;
 
 console.log(Math.trunc(flt));
@@ -232,13 +230,13 @@ console.log(parseInt(flt));
 console.log(Number(flt.toFixed(0)));
 ```
 ###### Assignment 1.7
-```
+```javascript
 console.log(Math.floor(Math.random()*5) ); 
 ```
 <br>
 
 ###### Assignment 2.1
-```
+```javascript
 let userName = "Elzero";
 console.log(userName[0].toLowerCase());
 console.log(userName.charAt(0).toLowerCase());
@@ -248,7 +246,7 @@ console.log(userName.substr(0, 1).toLowerCase());
 console.log(userName.split("", 1).toString().toLowerCase().repeat(3)); 
 ```
 ###### Assignment 2.1
-```
+```javascript
 let word = "Elzero";
 let letterZ = "z";
 let letterE = "e";
@@ -263,7 +261,7 @@ console.log(word.endsWith(letterO.toLowerCase()));
 ### Week 5: Control Flow - from 31 to 39  
 
 ###### Assignment 1.1
-```
+```javascript
 console.log(100 == "100");
 console.log(100 < 1000);
 console.log(110 > 100 || 10 < 20);
@@ -274,7 +272,7 @@ console.log(!"10" != 10);
 console.log(!20 == false);
 ```
 ###### Assignment 1.2
-```
+```javascript
 let num1 = 10;
 let num2 = 20;
 
@@ -286,7 +284,7 @@ console.log(num1 != num2);
 console.log(num1 <= num2); 
 ```
 ###### Assignment 1.3
-```
+```javascript
 let a = 20;
 let b = 30;
 let c = 10;
@@ -298,7 +296,7 @@ console.log(!(a == b) && !(a > b) && !(a == c) && !(a < c));
 <br>
 
 ###### Assignment 2.1
-```
+```javascript
 // Test Case 1
 // let num = 9; // "009"
 
@@ -317,7 +315,7 @@ if (num.toString().length == 1) {
 }
 ```
 ###### Assignment 2.2
-```
+```javascript
 let num1 = 9;
 let str = "9";
 let str2 = "20";
@@ -333,7 +331,7 @@ if (num1 == str) {
 }
 ```
 ###### Assignment 2.3
-```
+```javascript
 let num1 = 10;
 let num2 = 30;
 let num3 = "30";
@@ -353,7 +351,7 @@ num3 > num1 && num3 !== num2
   : "";
 ```
 ###### Assignment 2.4
-```
+```javascript
 // Edit What You Want Here
 
 let num1 = 15;
@@ -421,7 +419,7 @@ if (num4 - (num1 + num3) + num2 === 21) {
 <br>
 
 ###### Assignment 3.1
-```
+```javascript
 let day = "   tuesday  ";
 day = day.trim();
 day = day.charAt(0).toUpperCase() + day.slice(1);
@@ -451,7 +449,7 @@ switch (day) {
 ### Week 6: Arrays - from 40 to 47  
 
 ###### Assignment 1
-```
+```javascript
 let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
 let num = 3;
 
@@ -464,7 +462,7 @@ console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
 ```
 
 ###### Assignment 2
-```
+```javascript
 let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
 friends.shift();
 friends.pop();
@@ -472,7 +470,7 @@ console.log(friends); // ["Eman", "Osama"]
 ```
 
 ###### Assignment 3
-```
+```javascript
 let arrOne = ["C", "D", "X"];
 let arrTwo = ["A", "B", "Z"];
 let finalArr = [];
@@ -482,14 +480,14 @@ console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
 ```
 
 ###### Assignment 4
-```
+```javascript
 let website = "Go";
 let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 
 console.log(words[words.length - true][0].toUpperCase().slice(website.length)); 
 ```
 ###### Assignment 5
-```
+```javascript
 let needle = "JS";
 let haystack = ["PHP", "JS", "Python"];
 
@@ -505,7 +503,7 @@ if (haystack.lastIndexOf("needle" != -1)) {
 ```
 
 ###### Assignment 6
-```
+```javascript
 let arr1 = ["A", "C", "X"];
 let arr2 = ["D", "E", "F", "Y"];
 let allArrs = [];
@@ -525,7 +523,7 @@ console.log(allArrs); // fxy
 ### Week 7: Loops - from 48 to 56
 
 ###### Assignment 1.1
-```
+```javascript
 let start = 10;
 let end = 100;
 let exclude = 40;
@@ -538,7 +536,7 @@ for (let i = start; i <= end; i += start) {
 }
 ```
 ###### Assignment 1.2
-```
+```javascript
 let start = 10;
 let end = 0;
 let stop = 3;
@@ -553,7 +551,7 @@ for(let i = start; i>=stop; i--){
 }
 ```
 ###### Assignment 1.3
-```
+```javascript
 let start = 1;
 let end = 6;
 let breaker = 2;
@@ -566,7 +564,7 @@ for (let i = start; i <= end; i++) {
 }
 ```
 ###### Assignment 1.4
-```
+```javascript
 let index = 10;
 let jump = 2;
 let end = 0;
@@ -578,7 +576,7 @@ for (;;) {
 }
 ```
 ###### Assignment 1.5
-```
+```javascript
 let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
 let letter = "a";
 let ctn = +false;
@@ -589,7 +587,7 @@ for (let i = +false; i < friends.length;i++) {
 }
 ```
 ###### Assignment 1.6
-```
+```javascript
 let start = 0;
 let swappedName = "elZerO"; // ELZERO
 let final = "";
@@ -606,7 +604,7 @@ for (let i = start; i < swappedName.length; i++) {
 console.log(final);
 ```
 ###### Assignment 1.7
-```
+```javascript
 let start = 0;
 let mix = [1, 2, 3, "A", "B", "C", 4];
 
@@ -620,7 +618,7 @@ for (let i = start; i < mix.length; i++) {
 <br>
 
 ###### Assignment 2.1
-```
+```javascript
 let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
 let index = 0;
 let counter = 0;
@@ -641,7 +639,7 @@ while (index < friends.length) {
 ### Week 8: Functions & Scope pt.1  - from 57 to 63
 
 ###### Assignment 1
-```
+```javascript
 function sayHello(theName, theGender = "N/A") {
   switch (theGender) {
     case "Male":
@@ -659,7 +657,7 @@ sayHello("Eman", "Female");
 sayHello("Sameh");
 ```
 ###### Assignment 2
-```
+```javascript
 function calculate(firstNum, secondNum, operation) {
   if (secondNum === undefined) return console.log(`Second Number Not Found`);
   switch (operation) {
@@ -683,7 +681,7 @@ calculate(20, 30, "subtract");
 calculate(20, 30, "multiply");
 ```
 ###### Assignment 3
-```
+```javascript
 function ageInTime(theAge) {
   if (theAge > 100 || theAge < 10) return `Age out of range`;
   console.log(
@@ -699,7 +697,7 @@ ageInTime(110);
 ageInTime(38);
 ```
 ###### Assignment 4
-```
+```javascript
 function checkStatus(a, b, c) {
   let arr = [a, b, c];
   for (let i = 0; i < arr.length; i++) {
@@ -720,7 +718,7 @@ checkStatus(true, 38, "Osama");
 checkStatus(false, "Osama", 38);
 ```
 ###### Assignment 5
-```
+```javascript
 function createSelectBox(startYear, endYear) {
   document.write(`<select>`);
   for (let i = startYear; i <= endYear; i++) {
@@ -731,7 +729,7 @@ function createSelectBox(startYear, endYear) {
 createSelectBox(2000, 2021);
 ```
 ###### Assignment 6
-```
+```javascript
 function multiply(...numbers) {
   let result = 1;
   for (let i = 0; i < numbers.length; i++) {
@@ -749,7 +747,7 @@ multiply(100.5, 10, "B");
 
 ### Week 9: Functions & Scope pt.2  - from 64 to 70
 ###### Assignment 1
-```
+```javascript
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     let names = zName.split(" ");
@@ -774,7 +772,7 @@ console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 ```
 
 ###### Assignment 2
-```
+```javascript
 let itsMe = () => `Iam A Normal Function`;
 console.log(itsMe());
 let urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`
@@ -782,7 +780,7 @@ console.log(urlCreate("https", "elzero", "org"));
 ```
 
 ###### Assignment 3
-```
+```javascript
 let checker = (zName) => (status) => (salary) =>
   status === "Available"
     ? `${zName}, My Salary Is ${salary}`
@@ -793,7 +791,7 @@ console.log(checker("Ahmed")("Not Available")());
 ```
 
 ###### Assignment 4
-```
+```javascript
 function specialMix(...data) {
   let result = 0;
   for (let i = 0; i < data.length; i++) {
@@ -812,7 +810,7 @@ console.log(specialMix("Test", "Cool", "Test"));
 
 ### Week 10: Higher Order Functions And Practice - from 71 to 78
 ###### Assignment 1
-```
+```javascript
 let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
 let mixed = mix
   .map((el) => (typeof el === "number" ? "" : el))
@@ -820,7 +818,7 @@ let mixed = mix
 console.log(mixed);
 ```
 ###### Assignment 2
-```
+```javascript
 let myString = "EElllzzzzzzzeroo";
 let arr = myString
   .split("")
@@ -830,7 +828,7 @@ let arr = myString
 console.log(arr);
 ```
 ###### Assignment 3
-```
+```javascript
 let myArray = ["E", "l", "z", ["e", "r"], "o"];
 let newArray = myArray
   .map((el) => (Array.isArray(el) ? el.reduce((acc, curr) => acc + curr) : el))
@@ -838,7 +836,7 @@ let newArray = myArray
 console.log(newArray);
 ```
 ###### Assignment 4
-```
+```javascript
 let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
 let newNumsAndStrings = numsAndStrings
   .filter((el) => !isNaN(el))
@@ -847,7 +845,7 @@ let newNumsAndStrings = numsAndStrings
 console.log(newNumsAndStrings);
 ```
 ###### Assignment 5
-```
+```javascript
 let nums = [2, 12, 11, 5, 10, 1, 99];
 let newNums = nums.reduce(
   (acc, curr) => (curr % 2 == 0 ? acc * curr : acc + curr),
@@ -858,7 +856,119 @@ console.log(newNums);
 <hr>
 
 ### Week 11: Objects - from 79 to 85
-> To be added
+###### Assignment 1
+```javascript
+let member = {
+  name: "Elzero",
+  age: 38,
+  country: "Egypt",
+  fullDetails: function () {
+    return `My Name Is ${this.name}, My Age Is ${this.age}, I Live in ${this.country}`;
+  },
+};
+
+console.log(member.name);
+console.log(member.age);
+console.log(member.country); 
+console.log(member.fullDetails());
+```
+
+###### Assignment 2
+```javascript
+// Method One
+let objMethodOne = {
+  property: "Method One",
+};
+console.log(objMethodOne.property);
+
+// Method Two
+let objMethodTwo = new Object({
+  property: "Method Two",
+});
+console.log(objMethodTwo.property); 
+
+// Method Three
+let objMethodThree = Object.assign({
+  property: "Method Three",
+});
+console.log(objMethodThree.property); 
+
+// Method Four
+let objMethodFour = Object.create({
+  property: "Method Four",
+});
+console.log(objMethodFour.property);
+```
+
+###### Assignment 3
+```javascript
+let a = 1;
+
+let threeNums = {
+  b: 2,
+  c: 3,
+  d: 4,
+};
+
+let twoNums = {
+  e: 5,
+  f: 6,
+};
+
+let finalObject = Object.assign({ a }, threeNums, twoNums);
+console.log(finalObject);
+```
+
+###### Assignment 4
+```javascript
+let myFavGames = {
+  "Trinity Universe": {
+    publisher: "NIS America",
+    price: 40,
+  },
+  "Titan Quest": {
+    publisher: "THQ",
+    bestThree: {
+      one: "Immortal Throne",
+      two: "Ragnarök",
+      three: "Atlantis",
+    },
+    price: 50,
+  },
+  YS: {
+    publisher: "Falcom",
+    bestThree: {
+      one: "Oath in Felghana",
+      two: "Ark Of Napishtim",
+      three: "origin",
+    },
+    price: 40,
+  },
+};
+
+
+let gameName = [];
+for (keys in myFavGames) {
+  gameName.push(keys);
+}
+
+let gamesLength = gameName.length;
+
+for (let i = 0; i < gamesLength; i++) {
+  console.log(`The Game Name Is ${gameName[i]}`);
+  console.log(`The Publisher Is ${myFavGames[gameName[i]].publisher}`);
+  console.log(`The Price Is ${myFavGames[gameName[i]].price}`);
+
+  if (myFavGames[gameName[i]].hasOwnProperty("bestThree")) {
+    console.log("- Game Has Releases");
+    console.log(`First => ${myFavGames[gameName[i]].bestThree.one}`);
+    console.log(`Second => ${myFavGames[gameName[i]].bestThree.two}`);
+    console.log(`Third => ${myFavGames[gameName[i]].bestThree.three}`);
+  }
+  console.log("#".repeat(30));
+}
+```
+<hr>
 
 ### Week 12: Document Object Model pt.1 - from 86 to 93
 > To be added
