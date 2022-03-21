@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/63/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/67/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -971,7 +971,97 @@ for (let i = 0; i < gamesLength; i++) {
 <hr>
 
 ### Week 12: Document Object Model pt.1 - from 86 to 93
-> To be added
+###### Assignment 1
+```javascript
+console.log(document.getElementById("elzero"));
+console.log(document.getElementsByClassName("element")[0]);
+console.log(document.getElementsByTagName("div")[0]);
+console.log(document.getElementsByName("js")[0]);
+console.log(document.querySelector("#elzero"));
+console.log(document.querySelector(".element"));
+console.log(document.querySelector("div:first-child"));
+console.log(document.querySelector(".element#elzero"));
+console.log(document.querySelectorAll("#elzero")[0]);
+console.log(document.querySelectorAll(".element")[0]);
+console.log(document.querySelectorAll("div:first-child")[0]);
+console.log(document.querySelectorAll(".element#elzero")[0]);
+console.log(document.body.children[0]);
+console.log(document.body.childNodes[1]);
+console.log(document.body.firstElementChild);
+```
+
+###### Assignment 2
+```javascript
+let myImages = document.images;
+for (let i = 0; i < myImages.length; i++) {
+  myImages[i].setAttribute(
+    "src",
+    "https://elzero.org/wp-content/themes/elzero/imgs/logo.png"
+  );
+  myImages[i].setAttribute("alt", "Elzero Logo");
+  console.log(myImages[i]);
+}
+document.body.style = "background-color:black"
+```
+
+###### Assignment 3
+```css
+// optional
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid black;
+}
+
+form input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background-color: rgb(230, 228, 228);
+}
+
+```
+```javascript
+let myInput = document.querySelector("[name='dollar']");
+
+let result = document.getElementsByClassName("result")[0];
+
+myInput.oninput = function (e) {
+  if (myInput.value < 0) {
+  } else {
+    let newResult = myInput.value * 15.6;
+    result.innerHTML = `{${
+      myInput.value || 0
+    }} USD Dollar = {${newResult.toFixed(2)}} Egyptian Pound`;
+  }
+};
+
+```
+###### Assignment 4
+```javascript
+let firstDiv = document.querySelector(".one"),
+  secondDiv = document.querySelector(".two");
+
+let temp = firstDiv.textContent;
+firstDiv.textContent = secondDiv.textContent;
+secondDiv.textContent = `${temp} ${secondDiv.attributes.length}`;
+
+firstDiv.title = firstDiv.classList;
+secondDiv.title = secondDiv.classList;
+
+```
 
 ### Week 13: Document Object Model pt.2 - from 94 to 101
 > To be added
