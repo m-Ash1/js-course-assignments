@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/67/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/69/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -1062,6 +1062,103 @@ firstDiv.title = firstDiv.classList;
 secondDiv.title = secondDiv.classList;
 
 ```
+###### Assignment 5
+```javascript
+let images = document.images;
+for (let i = 0; i < images.length; i++) {
+  if (!images[i].hasAttribute("alt")) {
+    images[i].alt = `New`;
+  } else {
+    images[i].alt = `Old`;
+  }
+}
+```
+###### Assignment 6
+
+```css
+// optional
+body {
+  height: calc(100vh - 16px);
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  display: grid;
+  position: relative;
+  width: fit-content;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input,
+select {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #f9f9fd;
+  border: 1px rgba(0, 0, 0, 0.253) solid;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+input:last-of-type {
+  background-color: #009197;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.results {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 25px;
+  text-align: center;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.results .box {
+  background-color: #fc5029;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+}
+```
+
+```javascript
+let form = document.forms[0];
+let numberOfElements = document.querySelector("[name='elements']");
+let elementText = document.querySelector("[name='texts']");
+let type = document.querySelector("[name='type']");
+let resultParent = document.getElementsByClassName("results")[0];
+form.onsubmit = function (e) {
+  /*
+     // this code will delete all child elements
+      while (resultParent.firstChild) {
+        resultParent.removeChild(resultParent.firstChild);
+     }
+  */
+  // but you can do it easly by this :)
+  resultParent.innerHTML = "";
+
+  for (let i = 1; i <= numberOfElements.value; i++) {
+    let myDiv = document.createElement(type.value);
+    let text = document.createTextNode(elementText.value);
+    myDiv.className = `box`;
+    myDiv.title = `Element`;
+    myDiv.id = `id-${i}`;
+    myDiv.appendChild(text);
+    resultParent.appendChild(myDiv);
+  }
+
+  e.preventDefault();
+};
+```
+<hr>
+
+
 
 ### Week 13: Document Object Model pt.2 - from 94 to 101
 > To be added
