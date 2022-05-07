@@ -22,6 +22,7 @@ Current Progress : <p>![](https://progress-bar.dev/68/?scale=100&width=1100)</p>
     - [Week 16: Destructuring](#week-16-destructuring---from-115-to-122)
     - [Week 17: Map And Set](#week-17-map-and-set---from-123-to-133)
     - [Week 18: Regular Expression](#week-18-regular-expression---from-134-to-146)
+    - [Week 19: Object Oriented Programming](#week-19-object-oriented-programming---from-147-to-158)
 
 <hr>
 
@@ -1238,3 +1239,5 @@ document.addEventListener("click", function (e) {
 ### Week 18: Regular Expression - from 134 to 146
 > To be added
 
+### Week 19: Object Oriented Programming - from 147 to 158
+> To be added
