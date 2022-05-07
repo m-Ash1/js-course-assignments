@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/69/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/68/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -1161,7 +1161,67 @@ form.onsubmit = function (e) {
 
 
 ### Week 13: Document Object Model pt.2 - from 94 to 101
-> To be added
+###### Assignment 1
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+      window.onload = function (e) {
+        let el = document.getElementsByClassName("open");
+        for (let i = 0; i < el.length; i++) {
+          if (el[i].innerHTML == "Elzero") {
+            el[i].click();
+          }
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
+```
+###### Assignment 2
+> to be added
+
+###### Assignment 3
+```javascript
+let el = document.querySelector(".our-element");
+el.nextElementSibling.remove();
+let div = document.createElement("div");
+div.innerHTML = "Start";
+div.className = "start";
+div.title = "Start Element";
+div.setAttribute("data-value", "Start");
+
+el.before(div);
+
+let div2 = div.cloneNode(true);
+el.after(div2);
+```
+###### Assignment 4
+```javascript
+let el = document.querySelector("div");
+console.log(el.lastChild.textContent.trim());
+```
+
+###### Assignment 5
+```javascript
+document.addEventListener("click", function (e) {
+  if (e.target.parentElement)
+    e.target.parentElement.tagName == "BODY"
+      ? console.log(`This is ${e.target.nodeName.toLowerCase()}`)
+      : "";
+});
+```
+<hr>
 
 ### Week 14: Browser Object Model pt.1 - from 102 to 110
 > To be added
