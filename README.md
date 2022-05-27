@@ -23,7 +23,8 @@ Current Progress : <p>![](https://progress-bar.dev/72/?scale=100&width=1100)</p>
     - [Week 17: Map And Set](#week-17-map-and-set---from-123-to-133)
     - [Week 18: Regular Expression](#week-18-regular-expression---from-134-to-146)
     - [Week 19: Object Oriented Programming](#week-19-object-oriented-programming---from-147-to-158)
-
+    - [Week 20: Date, Generators, Modules](#week-20-date-generators-modules---from-159-to-168)
+    - [Week 21: AJAX and JSON](#week-21-ajax-and-json---from-169-to-178)
 <hr>
 
 ### Week 1: Introduction - from 1 to 9
@@ -1354,4 +1355,10 @@ setInterval(() => {
 > To be added
 
 ### Week 19: Object Oriented Programming - from 147 to 158
+> To be added
+
+### Week 20: Date Generators Modules - from 159 to 168 
+> To be added
+
+### Week 21: AJAX and JSON - from 169 to 178
 > To be added
