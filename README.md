@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/68/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/72/?scale=100&width=1100)</p>
 <hr>
 
 - ### Table of Contents:
@@ -1225,7 +1225,121 @@ document.addEventListener("click", function (e) {
 <hr>
 
 ### Week 14: Browser Object Model pt.1 - from 102 to 110
-> To be added
+
+###### Assignment 1
+```javascript
+let promMSG = prompt("Print Number From .. To .. ", "5-20");
+prom = promMSG.split("-");
+let start = parseInt(prom[0]);
+let end = parseInt(prom[1]);
+if (start > end) {
+  let temp = start;
+  start = end;
+  end = temp;
+}
+for (let i = start; i <= end; i++) {
+  console.log(i);
+}
+```
+###### Assignment 2
+```html
+<div class="pop-up">
+      <div class="x">X</div>
+      <h1>Welcome</h1>
+      <p>Welcome to ash's world!</p>
+    </div>
+```
+```css
+body {
+  display: grid;
+  height: calc(100vh - 16px);
+  place-content: center;
+}
+.pop-up {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  padding: 30px;
+  border-radius: 7px;
+  text-align: center;
+  background-color: #F5F3F4;
+  transition: 0.3s;
+  opacity: 0;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+h1 {
+  margin: 0;
+  margin-top: 10px;
+}
+p {
+  margin: 0;
+  margin-top: 20px;
+}
+.x {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(255 84 84);
+  font-size: 10px;
+  width: 30px;
+  display: grid;
+  color: white;
+  height: 30px;
+  place-content: center;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+```
+```javascript
+let popUp = document.getElementsByClassName("pop-up")[0];
+setTimeout(() => {
+  popUp.style.opacity = 1;
+}, 5000);
+
+let after = document.querySelector(".x");
+
+after.addEventListener("click", () => {
+  popUp.style.opacity = 0;
+});
+
+```
+###### Assignment 3
+```javascript
+let cnt = document.querySelector("div");
+setInterval(() => {
+  if (cnt.innerHTML == "0") {
+    clearInterval(cnt);
+  } else {
+    cnt.innerHTML -= 1;
+  }
+}, 1000);
+```
+###### Assignment 3
+```javascript
+let cnt = document.querySelector("div");
+setInterval(() => {
+  if (cnt.innerHTML == "0") {
+    location.replace("https://www.google.com");
+  } else {
+    cnt.innerHTML -= 1;
+  }
+}, 1000);
+```
+
+###### Assignment 4
+```javascript
+let cnt = document.querySelector("div");
+setInterval(() => {
+  if (cnt.innerHTML == "0") {
+    clearInterval(cnt);
+  } else if (cnt.innerHTML == "5") {
+    window.open("https://elzero.org", "_blank", "width:400,height:500,top:50,left:300");  
+    cnt.innerHTML -= 1;
+  } else {
+    cnt.innerHTML -= 1;
+  }
+}, 1000);
+```
 
 ### Week 15: Browser Object Model pt.2 - from 111 to 114
 > To be added
