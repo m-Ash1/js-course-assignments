@@ -1372,7 +1372,6 @@ setInterval(() => {
 </select>
 ```
 
-###### Assignment 1
 ```javascript
 let selects = document.querySelectorAll("select");
 let test = document.querySelector(".test");
@@ -1403,6 +1402,22 @@ selects.forEach((select) => {
   });
 });
 
+```
+###### Assignment 2
+
+```html
+<form>
+  <input type="text" name="name" />
+  <input type="password" name="password" />
+  <input type="email" name="email" />
+  <select name="department">
+      <option value="IT">Information Technology</option>
+      <option value="CS">Computer Science</option>
+      <option value="DS">Decision Support</option>
+      <option value="AI">Artificial Intelligence</option>
+      <option value="IS">Information System</option>
+  </select>
+</form>
 ```
 
 ```javascript
