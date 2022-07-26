@@ -1341,9 +1341,92 @@ setInterval(() => {
   }
 }, 1000);
 ```
+<hr>
 
 ### Week 15: Browser Object Model pt.2 - from 111 to 114
-> To be added
+
+###### Assignment 1
+```html
+<select name="font" id="font">
+    <option value="Cairo">Cairo</option>
+    <option value="Open">Open Sans</option>
+    <option value="Roboto">Roboto</option>
+</select>
+<select name="color" id="color">
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Black">Black</option>
+    <option value="Pink">Pink</option>
+    <option value="Yellow">Yellow</option>
+</select>
+<select name="size" id="size">
+    <option value="16">16px</option>
+    <option value="18">18px</option>
+    <option value="20">20px</option>
+    <option value="22">22px</option>
+    <option value="24">24px</option>
+    <option value="26">26px</option>
+    <option value="28">28px</option>
+    <option value="30">30px</option>
+</select>
+```
+
+###### Assignment 1
+```javascript
+let selects = document.querySelectorAll("select");
+let test = document.querySelector(".test");
+
+if (localStorage.size != 0) {
+  document.body.style.fontFamily = localStorage.getItem("font");
+  document.body.style.color = localStorage.getItem("color");
+  document.body.style.fontSize = `${localStorage.getItem("size")}px`;
+
+  selects[0].value = localStorage.getItem("font");
+  selects[1].value = localStorage.getItem("color");
+  selects[2].value = localStorage.getItem("size");
+}
+
+selects.forEach((select) => {
+  select.addEventListener("change", function () {
+    let font = selects[0].value;
+    let color = selects[1].value;
+    let size = selects[2].value;
+
+    localStorage.setItem("font", font);
+    localStorage.setItem("color", color);
+    localStorage.setItem("size", size);
+
+    document.body.style.fontFamily = localStorage.getItem("font");
+    document.body.style.color = localStorage.getItem("color");
+    document.body.style.fontSize = `${localStorage.getItem("size")}px`;
+  });
+});
+
+```
+
+```javascript
+let input = document.querySelectorAll("input");
+
+let select = document.querySelector('[name="department"]');
+
+select.addEventListener("change", function (e) {
+  sessionStorage.setItem("department", e.target.value);
+});
+
+select.value = sessionStorage.getItem("department");
+input[0].value = sessionStorage.getItem("name");
+input[1].value = sessionStorage.getItem("password");
+input[2].value = sessionStorage.getItem("email");
+
+let inputs = document.querySelectorAll("input");
+inputs.forEach((input) => {
+  input.addEventListener("blur", function (e) {
+    sessionStorage.setItem(e.target.name, e.target.value);
+  });
+});
+```
+<hr>
 
 ### Week 16: Destructuring - from 115 to 122
 > To be added
