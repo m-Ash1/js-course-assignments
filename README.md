@@ -25,6 +25,7 @@ Current Progress : <p>![](https://progress-bar.dev/74/?scale=100&width=1100)</p>
     - [Week 19: Object Oriented Programming](#week-19-object-oriented-programming---from-147-to-158)
     - [Week 20: Date, Generators, Modules](#week-20-date-generators-modules---from-159-to-168)
     - [Week 21: AJAX and JSON](#week-21-ajax-and-json---from-169-to-178)
+    - [Week 22: Promise](#week-22-promise---from-179-to-188)
 <hr>
 
 ### Week 1: Introduction - from 1 to 9
@@ -1607,8 +1608,22 @@ console.log(title, age, available ? "Available" : "Not Available", skill);
 
 
 ### Week 17: Map And Set - from 123 to 133
-> To be added
 
+###### Assignment 5
+```javascript
+let setOfNumbers = new Set([10]);
+setOfNumbers.add(20).add(setOfNumbers.size);
+
+console.log(setOfNumbers);
+
+console.log([...setOfNumbers].pop());
+/* explanation of the above line of code:
+    1. the ... operator within the [] brackets is used to convert the whole set into an array
+       by the concept of destructuring from previous lessons.
+    2. the pop() method is used to remove the last element of the array.
+*/
+
+```
 ### Week 18: Regular Expression - from 134 to 146
 > To be added
 
@@ -1619,4 +1634,7 @@ console.log(title, age, available ? "Available" : "Not Available", skill);
 > To be added
 
 ### Week 21: AJAX and JSON - from 169 to 178
+> To be added
+
+### Week 22: Promise - from 179 to 188
 > To be added
