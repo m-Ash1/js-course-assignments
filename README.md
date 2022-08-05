@@ -1609,7 +1609,7 @@ console.log(title, age, available ? "Available" : "Not Available", skill);
 
 ### Week 17: Map And Set - from 123 to 133
 
-###### Assignment 5
+###### Assignment 1
 ```javascript
 let setOfNumbers = new Set([10]);
 setOfNumbers.add(20).add(setOfNumbers.size);
@@ -1622,8 +1622,48 @@ console.log([...setOfNumbers].pop());
        by the concept of destructuring from previous lessons.
     2. the pop() method is used to remove the last element of the array.
 */
-
 ```
+
+###### Assignment 2
+```javascript
+let myFriends = ["Osama", "Ahmed", "Sayed", "Sayed", "Mahmoud", "Osama"];
+console.log(Array.from(new Set(myFriends)).sort());
+*/
+```
+
+
+###### Assignment 3
+```javascript
+let myInfo = {
+  username: "Osama",
+  role: "Admin",
+  country: "Egypt",
+};
+
+let myMap = new Map(Object.keys(myInfo).map((key) => [key, myInfo[key]]));
+console.log(myMap);
+console.log(myMap.size);
+console.log(myMap.has("role"));
+*/
+```
+
+###### Assignment 4
+```javascript
+let theNumber = 100020003000;
+console.log([...new Set(theNumber.toString())].filter((item)=>item!=0).join(""));
+```
+
+###### Assignment 5
+```javascript
+let theName = "Elzero";
+console.log([...theName])
+console.log(Array(...new Set(theName)))
+console.log(theName.split(""))
+console.log(Array.from(theName))
+console.log(Object.assign([], theName))
+```
+
+
 ### Week 18: Regular Expression - from 134 to 146
 > To be added
 
