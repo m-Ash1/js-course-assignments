@@ -1663,6 +1663,52 @@ console.log(Array.from(theName))
 console.log(Object.assign([], theName))
 ```
 
+###### Assignment 6
+```javascript
+let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
+
+// Move numbers in the first of array
+let numbersCount = 0;
+chars.forEach(function (char, index, array) {
+  if (typeof char === "number") {
+    let num = array.splice(index, 1);
+    array.unshift(...num);
+    numbersCount++;
+  }
+});
+
+chars.copyWithin(0, numbersCount, 2 * numbersCount);
+console.log(chars);
+```
+
+###### Assignment 7
+```javascript
+let numsOne = [1, 2, 3];
+let numsTwo = [4, 5, 6];
+
+// Needed Output
+
+// 1st Method
+console.log(numsOne.concat(numsTwo));
+
+// 2nd Method
+console.log([...numsOne, ...numsTwo]);
+
+// 3rd Method
+console.log(
+  (merged = numsTwo.reduce((arr, item) => {
+    arr.push(item);
+    return arr;
+  }, numsOne))
+);
+
+// 4th Method
+numsOne.push(...numsTwo);
+console.log(numsOne);
+
+// 5th Method
+console.log([...new Set([...numsOne, ...numsTwo])]);
+```
 
 ### Week 18: Regular Expression - from 134 to 146
 > To be added
