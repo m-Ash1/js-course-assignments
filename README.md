@@ -1,6 +1,11 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/80/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/84/?scale=100&width=1100)</p>
+
+<!---
+101 out of 121
+-->
+
 <hr>
 
 - ### Table of Contents:
@@ -1709,9 +1714,67 @@ console.log(numsOne);
 // 5th Method
 console.log([...new Set([...numsOne, ...numsTwo])]);
 ```
+<hr>
 
 ### Week 18: Regular Expression - from 134 to 146
-> To be added
+
+###### Assignment 1
+```javascript
+let ip = "2001:db8:3333:4444:5555:6666:7777:8888";
+let ipRegex = /^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$/;
+
+console.log(ip.match    (ipRegex));
+```
+
+###### Assignment 2
+```javascript
+let specialNames = "Os10O OsO Os100O Osa100O Os1000 Os100m";
+let specialNamesRegex = /Os(\d+)?O/g;
+
+console.log(specialNames.match(specialRegex));
+```
+
+###### Assignment 3
+```javascript
+let phone = "+(995)-123 (4567)";
+let phoneRegex = /\+\(\d{3}\)-\d{3}\s\(\d{4}\)/gi;
+
+console.log(phone.match(phoneRegex));
+```
+
+###### Assignment 4
+```javascript
+let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+
+
+// https? : the '?' means that the character can be optional
+// : the ':' means that the character is mandatory
+// \/\/ : the '/' character is escaped 
+// (?:[-\w]+\.) : the group of characters between the brackets is optional =>  (www.) opt
+// ([-\w]+) : the group of characters between the brackets is mandatory =>  (coursera) mandatory
+// \. : the '.' character is mandatory
+// \w+ : a group of mandatory characters
+// (?:\.\w+)? : the group of characters between the brackets is optional =>  (.com) opt
+// \/? : the '/' character is optional
+// .* : the group of characters between the brackets is mandatory => (/courses/js/index.html) 
+```
+
+###### Assignment 5
+```javascript
+let date1 = "25/10/1982";
+let date2 = "25 - 10 - 1982";
+let date3 = "25 10 1982";
+let date4 = "25 10 82";
+
+let re = /\d{1,2}(\s-\s|\s|\/)\d{1,2}(\s-\s|\s|\/)\d{2,4}/gi;
+
+console.log(date1.match(re)); // "25/10/1982"
+console.log(date2.match(re)); // "25 - 10 - 1982"
+console.log(date3.match(re)); // "25 10 1982"
+console.log(date4.match(re)); // "25 10 82"
+```
+
+<hr>
 
 ### Week 19: Object Oriented Programming - from 147 to 158
 > To be added
