@@ -1777,7 +1777,125 @@ console.log(date4.match(re)); // "25 10 82"
 <hr>
 
 ### Week 19: Object Oriented Programming - from 147 to 158
-> To be added
+###### Assignment 1
+```javascript
+class Car {
+  constructor(name, model, price) {
+    this.name = name;
+    this.model = model;
+    this.price = price;
+  }
+  run() {
+    return "Car Is Running Now";
+  }
+  stop() {
+    return "Car Is Stopped";
+  }
+}
+// Needed Output
+
+let car1 = new Car("BMW", "X5", 100000);
+let car2 = new Car("Audi", "A6", 80000);
+let car3 = new Car("Mercedes", "C200", 120000);
+
+console.log(
+  `Car One Name Is ${car1.name} And Model Is ${car1.model} And Price Is ${car1.price}`
+);
+console.log(car1.run());
+```
+
+###### Assignment 2
+```javascript
+class Phone {
+  constructor(name, serial, price) {
+    this.name = name;
+    this.serial = serial;
+    this.price = price;
+  }
+}
+
+class Tablet extends Phone {
+  constructor(name, serial, price, size) {
+    super(name, serial, price);
+    this.size = size;
+  }
+  fullDetails() {
+    return `${this.name} Serial is ${this.serial} And Size is ${
+      this.size || "Unknown"
+    }`;
+  }
+}
+
+// Write Tablet Class Here
+
+let TabletOne = new Tablet("iPad", 100200300, 1500, 12.9);
+let TabletTwo = new Tablet("Nokia", 350450650, 800, 10.5);
+let TabletThree = new Tablet("LG", 250450650, 650);
+
+console.log(`${TabletOne.fullDetails()}`);
+// iPad Serial is 100200300 And Size Is 12.9
+
+console.log(`${TabletTwo.fullDetails()}`);
+// Nokia Serial is 350450650 And Size Is 10.5
+
+console.log(`${TabletThree.fullDetails()}`);
+// LG Serial is 250450650 And Size Is Unknown
+```
+
+###### Assignment 3
+```javascript
+class User {
+  #c;
+  constructor(username, card) {
+    this.u = username;
+    this.#c = card;
+  }
+  validate() {
+    // Validate data
+    let credit = typeof this.#c === "string" ? this.#c : this.#c.toString();
+    let creditRe = /\d{4}/g;
+    let result = credit.match(creditRe);
+    result = result
+      .map((el, i) => {
+        return i < result.length - 1 ? (el += "-") : el;
+      })
+      .join("");
+
+    return result;
+  }
+  get showData() {
+    return `Hello ${this.u} Your Credit Card Number Is ${this.validate()}`;
+  }
+}
+
+// Do Not Edit Anything Below
+
+let userOne = new User("Osama", "1234-5678-1234-5678");
+let userTwo = new User("Ahmed", "1234567812345678");
+let userThree = new User("Ghareeb", 1234567812345678);
+
+console.log(userOne.showData);
+// Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userTwo.showData);
+// Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userThree.showData);
+// Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userOne.c); // Prevent Accessing To Card Property Here
+// Undefined
+```
+
+###### Assignment 4
+```javascript
+
+```
+
+###### Assignment 5
+```javascript
+
+```
 
 ### Week 20: Date Generators Modules - from 159 to 168 
 > To be added
