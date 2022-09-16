@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/88/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/90/?scale=100&width=1100)</p>
 
 <!---
 101 out of 121
@@ -1933,7 +1933,143 @@ console.log(myObj);
 ```
 
 ### Week 20: Date Generators Modules - from 159 to 168 
-> To be added
+###### Assignment 1
+```javascript
+let date = new Date("27 feb 2002");
+let confDate = Date.now() - date.getTime();
+console.log(`${(confDate /= 1000)} Seconds`);
+console.log(`${(confDate /= 60)} Minutes`);
+console.log(`${(confDate /= 60)} Hours`);
+console.log(`${(confDate /= 24)} Days`);
+console.log(`${(confDate /= 30)} Months`);
+console.log(`${(confDate /= 12)} Years`);
+
+```
+###### Assignment 2
+```javascript
+let tenYearsAfterOrigins = new Date(0);
+tenYearsAfterOrigins.setFullYear(1980, 0, 1);
+tenYearsAfterOrigins.setHours(0, 0, 1, 0);
+console.log(tenYearsAfterOrigins);
+```
+###### Assignment 3
+```javascript
+let date = new Date();
+date.setDate(-1);
+
+// Needed Output
+
+// "Sat Apr 30 2022 18:13:20 GMT+0200 (Eastern European Standard Time)"
+// "Previous Month Is April And Last Day Is 30"
+
+console.log(date);
+
+console.log(
+  `Previous Month Is ${date.toLocaleString("en-us", {
+    month: "long",
+  })} And Last Day Is ${date.getDate()}`
+);
+```
+###### Assignment 4
+```javascript
+// First Method
+let BirthDate1 = new Date(2002, 1, 27, 0, 0, 0, 0);
+console.log(BirthDate1);
+
+// Second Method
+let BirthDate2 = new Date("2002/02/27");
+console.log(BirthDate2);
+
+// Third Method
+let BirthDate3 = new Date(Date.parse("2002/02/27"));
+console.log(BirthDate3);
+```
+###### Assignment 5
+```javascript
+let t1 = performance.now();
+for (let i = 1; i < 100000; i++) {
+  console.log(i);
+}
+let t2 = performance.now();
+
+console.log(`Loop Took ${Math.trunc(t2 - t1)} milliseconds`);
+```
+###### Assignment 6
+```javascript
+// Write Your Generator Function Here
+function* gen() {
+  let i = 1;
+  while (true) {
+    yield 2 * (50 * Math.pow(i, 2) - 80 * i + 37);
+    i++;
+  }
+}
+let generator = gen();
+
+console.log(generator.next()); // {value: 14, done: false}
+console.log(generator.next()); // {value: 154, done: false}
+console.log(generator.next()); // {value: 494, done: false}
+console.log(generator.next()); // {value: 1034, done: false}
+console.log(generator.next()); // {value: 1774, done: false}
+console.log(generator.next()); // {value: 2714, done: false}
+console.log(generator.next()); // {value: 3854, done: false}
+console.log(generator.next()); // {value: 5194, done: false}
+console.log(generator.next()); // {value: 6734, done: false}
+
+// The mathimatical equation is 2(50n^2 - 80n + 37) solved by : https://www.wolframalpha.com/widgets/view.jsp?id=a3af2e675c3bfae0f2ecce820c2bef43
+```
+###### Assignment 7
+```javascript
+function* genNumbers() {
+  yield* [1, 2, 2, 2, 3, 4, 5];
+}
+function* genLetters() {
+  yield* ["A", "B", "B", "B", "C", "D"];
+}
+
+// Write Your Generator Function Here
+function* genAll() {
+  yield* new Set(genNumbers());
+  yield* new Set(genLetters());
+}
+let generator = genAll();
+
+console.log(generator.next()); // {value: 1, done: false}
+console.log(generator.next()); // {value: 2, done: false}
+console.log(generator.next()); // {value: 3, done: false}
+console.log(generator.next()); // {value: 4, done: false}
+console.log(generator.next()); // {value: 5, done: false}
+console.log(generator.next()); // {value: "A", done: false}
+console.log(generator.next()); // {value: "B", done: false}
+console.log(generator.next()); // {value: "C", done: false}
+console.log(generator.next()); // {value: "D", done: false}
+
+```
+
+###### Assignment 8
+```javascript
+// main.js file
+
+import calc, * as modOne from "./mod-one.js";
+
+console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree)); // 60
+
+// mod-one.js File
+import { numOne, numTwo, numThree } from "./mod-two.js";
+export default function (a, b, c) {
+  return a + b + c;
+}
+export { numOne, numTwo, numThree };
+
+// mod-two.js File
+let a = 10; // Do Not Edit Names
+let b = 20; // Do Not Edit Names
+let c = 30; // Do Not Edit Names
+
+export { a as numOne, b as numTwo, c as numThree };
+```
+
+<hr>
 
 ### Week 21: AJAX and JSON - from 169 to 178
 > To be added
