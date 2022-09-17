@@ -1566,7 +1566,7 @@ console.log(`Origin Price Is ${or}`);
 // Origin Price Is 30 USD
 ```
 
-###### Assignment 5
+###### Assignment 6
 ```javascript
 let chosen = 3;
 
