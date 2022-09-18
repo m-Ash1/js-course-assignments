@@ -1,9 +1,9 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/90/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/98/?scale=100&width=1100)</p>
 
 <!---
-101 out of 121
+119 out of 121
 -->
 
 <hr>
@@ -2072,7 +2072,114 @@ export { a as numOne, b as numTwo, c as numThree };
 <hr>
 
 ### Week 21: AJAX and JSON - from 169 to 178
-> To be added
+###### Assignment 1
+```json
+[
+  {
+    "id": "1",
+    "author": "Ash",
+    "title": "Why Ash is the best Pokemon",
+    "category": "Games",
+    "content": "lorem ipsum dolor sit amet"
+  },
+  {
+    "id": "2",
+    "author": "Hamdy",
+    "title": "Benfits of eating carrots",
+    "category": "Food",
+    "content": "lorem ipsum dolor sit amet"
+  },
+  {
+    "id": "3",
+    "author": "Salma",
+    "title": "How to make a good salad",
+    "category": "Food",
+    "content": "lorem ipsum dolor sit amet"
+  },
+  {
+    "id": "4",
+    "author": "Mariam",
+    "title": "Javascript is weird",
+    "category": "Javascript",
+    "content": "lorem ipsum dolor sit amet"
+  },
+  {
+    "id": "5",
+    "author": "Mahdy",
+    "title": "Tips for life",
+    "category": "All",
+    "content": "lorem ipsum dolor sit amet"
+  }
+]
+```
+###### Assignment 2
+```javascript
+let req = new XMLHttpRequest();
+req.open("GET", "articles.json");
+req.send();
+req.onreadystatechange = function () {
+  if (req.readyState === 4 && req.status === 200) {
+    let articles = JSON.parse(req.responseText);
+    for (article of articles) {
+      console.log(article);
+    }
+   console.log(`Data Loaded`);
+  }
+};
+```
+
+###### Assignment 3
+```javascript
+let req = new XMLHttpRequest();
+req.open("GET", "articles.json");
+req.send();
+req.onreadystatechange = function () {
+  if (req.readyState === 4 && req.status === 200) {
+    let mainData = JSON.parse(req.responseText);
+    for (article of mainData) {
+      article.category = "All";
+    }
+
+    console.log(mainData);
+    updatedData = JSON.stringify(mainData);
+    console.log(updatedData);
+    console.log(`Data Loaded`);
+  }
+};
+```
+
+###### Assignment 4
+```javascript
+let req = new XMLHttpRequest();
+req.open("GET", "articles.json");
+req.send();
+req.onreadystatechange = function () {
+  if (req.readyState === 4 && req.status === 200) {
+    let mainData = JSON.parse(req.responseText);
+    let articlesDiv = document.createElement("div");
+    articlesDiv.id = "data";
+    for (article of mainData) {
+      let articleDiv = document.createElement("div");
+      let articleTitle = document.createElement("h2");
+      articleTitle.innerHTML = article.title;
+      let articleContent = document.createElement("p");
+      articleContent.innerHTML = article.content;
+      let articleAuthor = document.createElement("p");
+      articleAuthor.innerHTML = article.author;
+      let articleCategory = document.createElement("p");
+      articleCategory.innerHTML = article.category;
+
+      articleDiv.appendChild(articleTitle);
+      articleDiv.appendChild(articleContent);
+      articleDiv.appendChild(articleAuthor);
+      articleDiv.appendChild(articleCategory);
+
+      articlesDiv.appendChild(articleDiv);
+    }
+    document.body.appendChild(articlesDiv);
+  }
+};
+```
 
 ### Week 22: Promise - from 179 to 188
 > To be added
