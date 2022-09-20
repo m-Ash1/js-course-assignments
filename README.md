@@ -1,6 +1,6 @@
 # <p id="top" align="center">JavaScript Bootcamp Assignments</p>
 
-Current Progress : <p>![](https://progress-bar.dev/98/?scale=100&width=1100)</p>
+Current Progress : <p>![](https://progress-bar.dev/100/?scale=100&width=1100)</p>
 
 <!---
 119 out of 121
