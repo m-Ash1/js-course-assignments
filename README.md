@@ -2180,6 +2180,64 @@ req.onreadystatechange = function () {
   }
 };
 ```
+<hr>
+
 
 ### Week 22: Promise - from 179 to 188
-> To be added
+###### Assignment 1
+```javascript
+let myPromise = new Promise(function (myResolve, myReject) {
+  let request = new XMLHttpRequest();
+  request.onload = function () {
+    if (request.status === 200) {
+      let myData = JSON.parse(request.responseText);
+      myData.length = 5;
+      myResolve(myData);
+    } else {
+      myReject("Error");
+    }
+  };
+  request.open("GET", "articles.json");
+  request.send();
+});
+
+myPromise.then((domData) => {
+  for (let i = 0; i < domData.length; i++) {
+    let myDiv = document.createElement("div");
+    let myH3 = document.createElement("h3");
+    let myP = document.createElement("p");
+    myH3.innerText = domData[i].title;
+    myP.innerText = domData[i].description;
+    myDiv.appendChild(myH3);
+    myDiv.appendChild(myP);
+    document.body.append(myDiv);
+  }
+});
+
+```
+
+###### Assignment 2
+```javascript
+async function fetchAPI() {
+  try {
+    let response = await fetch("articles.json");
+    let myData = await response.json();
+    myData.length = 5;
+    return myData;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+fetchAPI().then((domData) => {
+  for (data of domData) {
+    let myDiv = document.createElement("div");
+    let myH3 = document.createElement("h3");
+    let myP = document.createElement("p");
+    myH3.innerText = data.title;
+    myP.innerText = data.description;
+    myDiv.appendChild(myH3);
+    myDiv.appendChild(myP);
+    document.body.append(myDiv);
+  }
+```
